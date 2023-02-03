@@ -44,6 +44,7 @@ class _LibraryPageState extends State<LibraryPage> {
             context: context,
             delete: () {
               libraryList.removeAt(index);
+              Navigator.pop(context);
               setState(() {});
             },
             item: libraryList[index]!
